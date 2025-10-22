@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "derived_class.h"
 
 int main(int argc, char *argv[]) {
@@ -6,6 +8,9 @@ int main(int argc, char *argv[]) {
 
   b.a_method();
   d.a_method();
+
+  std::cout << b.name << std::endl;
+  // std::cout << d.name << std::endl;
 
   return EXIT_SUCCESS;
 }
